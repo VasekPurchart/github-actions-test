@@ -10,3 +10,6 @@ jobs:
     steps:
       - name: Run a one-line script
         run: echo Hello, world!
+      - run: echo "REF ${{ github.ref }}"
+      - run: echo "HEAD REF ${{ github.head_ref }}"
+      - run: echo "SHA ${{ github.sha }}"
